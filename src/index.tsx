@@ -1,10 +1,16 @@
+/** @jsxImportSource @emotion/react */
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import "./index.css";
+import { jsx, ThemeProvider } from "@emotion/react";
+import { defaultTheme } from "./style";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={defaultTheme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

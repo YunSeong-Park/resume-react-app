@@ -1,12 +1,11 @@
 /** @jsxImportSource @emotion/react */
-import React from "react";
 import { css, jsx } from "@emotion/react";
 
 function App() {
   return (
     <div
-      css={css`
-        background: black;
+      css={(theme) => css`
+        background: ${theme.color.primary};
         display: flex;
         justify-content: center;
         align-items: center;
