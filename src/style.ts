@@ -1,26 +1,6 @@
+import { Theme } from "@emotion/react";
+
 const PRIMARY_COLOR = "#03a9f4";
-
-type Theme = {
-  color: Color;
-};
-
-type Color = {
-  primary: string;
-  background: string;
-  leftSide: {
-    background: string;
-    emphasis: string;
-    font: string;
-    persent: string;
-  };
-  rightSide: {
-    background: string;
-    titleFont: string;
-    font: string;
-    lightFont: string;
-    persent: string;
-  };
-};
 
 export const defaultTheme: Theme = {
   color: {

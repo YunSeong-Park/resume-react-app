@@ -1,9 +1,5 @@
 import "@emotion/react";
 
-type Theme = {
-  color: Color;
-};
-
 type Color = {
   primary: string;
   background: string;
