@@ -1,18 +1,16 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx } from "@emotion/react";
+import { css, jsx, Theme } from "@emotion/react";
 
-function App() {
-  return (
-    <div
-      css={(theme) => css`
-        background: ${theme.color.primary};
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      `}
-    ></div>
-  );
-}
+const appStyle = (theme: Theme) => css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: ${theme.color.primary};
+`;
+
+const App = () => {
+  return <div css={appStyle}></div>;
+};
 
 export default App;
