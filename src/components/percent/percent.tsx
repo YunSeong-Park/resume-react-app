@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx, SerializedStyles, Theme, useTheme } from "@emotion/react";
+import { css, jsx, Theme, useTheme } from "@emotion/react";
 
 const getStyle = (height: number, background: string) => {
   return (theme: Theme) =>
@@ -27,13 +27,13 @@ const commonStyle = (theme: Theme) => css`
 `;
 
 interface RawPercentProps {
-  style: SerializedStyles | ((theme: Theme) => SerializedStyles);
+  style: any;
   percent: number;
 }
 
 const Percent: React.FC<RawPercentProps> = ({ style, percent }) => {
   return (
-    <div css={[style, commonStyle]}>
+    <div css={[commonStyle, style]}>
       <div
         css={css`
           width: ${percent}%;
