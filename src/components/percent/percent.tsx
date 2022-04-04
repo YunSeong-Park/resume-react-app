@@ -25,7 +25,7 @@ const Percent: React.FC<PercentProps> = ({
         { width },
       ]}
     >
-      <div css={css({ width: percent + "%" })}></div>
+      <div css={css({ width: Math.min(100, percent) + "%" })}></div>
     </div>
   );
 };
