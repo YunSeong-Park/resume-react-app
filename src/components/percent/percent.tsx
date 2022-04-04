@@ -14,7 +14,7 @@ const Percent: React.FC<PercentProps> = ({
   percent,
   color = "primary",
   size = "medium",
-  width,
+  width = "100%",
 }) => {
   return (
     <div

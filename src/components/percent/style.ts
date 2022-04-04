@@ -2,7 +2,6 @@ import { css, Theme } from "@emotion/react";
 
 export const style = (theme: Theme) => css`
   position: relative;
-  width: 100%;
 
   > div {
     background: ${theme.color.primary};
@@ -24,13 +23,9 @@ export const sizes = {
 
 export const colors = {
   primary: (theme: Theme) => css`
-    > div {
-      background: ${theme.color.rightSide.persent};
-    }
+    background: ${theme.color.rightSide.persent};
   `,
   secondary: (theme: Theme) => css`
-    > div {
-      background: ${theme.color.leftSide.persent};
-    }
+    background: ${theme.color.leftSide.persent};
   `,
 };
