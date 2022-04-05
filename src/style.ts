@@ -1,4 +1,4 @@
-import { Theme } from "@emotion/react";
+import { css, Theme } from "@emotion/react";
 
 const PRIMARY_COLOR = "#03a9f4";
 
@@ -21,3 +21,11 @@ export const defaultTheme: Theme = {
     },
   },
 };
+
+export const globalStyle = css`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+`;

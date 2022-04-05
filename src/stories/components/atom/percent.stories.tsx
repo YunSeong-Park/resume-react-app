@@ -3,11 +3,12 @@ import { ComponentStory, ComponentMeta, addDecorator } from "@storybook/react";
 
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from "@emotion/react";
-import Percent, { PercentProps } from "../components/percent/percent";
+import Percent, { PercentProps } from "../../../components/percent/percent";
 import { number, radios, text } from "@storybook/addon-knobs";
+import { directory } from "./utill";
 
 export default {
-  title: "Atoms/Percent",
+  title: `${directory}/Percent`,
   component: Percent,
   decorators: [
     (Story) => {

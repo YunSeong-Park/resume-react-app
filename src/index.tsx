@@ -2,13 +2,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import "./index.css";
-import { jsx, ThemeProvider } from "@emotion/react";
-import { defaultTheme } from "./style";
+import { Global, jsx, ThemeProvider } from "@emotion/react";
+import { defaultTheme, globalStyle } from "./style";
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={defaultTheme}>
+      <Global styles={globalStyle} />
       <App />
     </ThemeProvider>
   </React.StrictMode>,
