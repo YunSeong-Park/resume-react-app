@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx, Theme } from "@emotion/react";
 
-const appStyle = (theme: Theme) => css`
+const style = (theme: Theme) => css`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@ const appStyle = (theme: Theme) => css`
 `;
 
 const App = () => {
-  return <div css={appStyle}></div>;
+  return <div css={style}></div>;
 };
 
 export default App;
