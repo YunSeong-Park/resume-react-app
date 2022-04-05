@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx, SerializedStyles, Theme, useTheme } from "@emotion/react";
+import { css, jsx } from "@emotion/react";
 
 const style = css`
   position: relative;
