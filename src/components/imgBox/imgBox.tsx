@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from "@emotion/react";
+import { memo } from "react";
 
 const style = css`
   position: relative;
@@ -28,4 +29,4 @@ const ImageBox: React.FC<ImagBoxProps> = ({ src }) => {
   );
 };
 
-export default ImageBox;
+export default memo(ImageBox);
