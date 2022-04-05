@@ -1,10 +1,8 @@
-import React from "react";
-import { ComponentStory, ComponentMeta, addDecorator } from "@storybook/react";
-
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from "@emotion/react";
-import Percent, { PercentProps } from "../../../components/percent/percent";
+import { ComponentMeta } from "@storybook/react";
 import { number, radios, text } from "@storybook/addon-knobs";
+import Percent from "../../../components/percent/percent";
 import { directory } from "./utill";
 
 export default {
