@@ -1,25 +1,16 @@
 import "@emotion/react";
 
-type Color = {
-  primary: string;
-  background: string;
-  leftSide: {
-    background: string;
-    emphasis: string;
-    font: string;
-    persent: string;
-  };
-  rightSide: {
-    background: string;
-    titleFont: string;
-    font: string;
-    lightFont: string;
-    persent: string;
-  };
-};
-
 declare module "@emotion/react" {
   export interface Theme {
-    color: Color;
+    primary: string;
+    bg_page1: string;
+    bg_element1: string;
+    bg_element2: string;
+    bg_element3: string;
+    bg_element4: string;
+    border1: string;
+    text1: string;
+    text2: string;
+    text3: string;
   }
 }

@@ -1,24 +1,23 @@
 import { css, Theme } from "@emotion/react";
 
 const PRIMARY_COLOR = "#03a9f4";
+const BLACK_COLOR = "#000";
+const WHITE_COLOR = "#FFF";
 
-export const defaultTheme: Theme = {
-  color: {
+export type ThemeColor = "light";
+
+export const themeSets: Record<ThemeColor, Theme> = {
+  light: {
     primary: PRIMARY_COLOR,
-    background: "lightblue",
-    leftSide: {
-      background: "#003147",
-      emphasis: "rgba(255, 255, 255, 0.2)",
-      font: "#FFFFFF",
-      persent: "#081921",
-    },
-    rightSide: {
-      background: "#FFFFFF",
-      titleFont: "#003147",
-      font: "#333",
-      lightFont: "#848c90",
-      persent: "#f0f0f0",
-    },
+    bg_page1: "lightblue",
+    bg_element1: "#003137",
+    bg_element2: WHITE_COLOR,
+    bg_element3: "#081921",
+    bg_element4: "#f0f0f0",
+    border1: "rgba(255, 255, 255, 0.2)",
+    text1: WHITE_COLOR,
+    text2: "#333",
+    text3: "#848c90",
   },
 };
 

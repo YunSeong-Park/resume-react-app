@@ -4,7 +4,7 @@ export const style = (theme: Theme) => css`
   position: relative;
 
   > div {
-    background: ${theme.color.primary};
+    background: ${theme.primary};
     position: absolute;
     top: 0;
     left: 0;
@@ -23,9 +23,9 @@ export const sizes = {
 
 export const colors = {
   primary: (theme: Theme) => css`
-    background: ${theme.color.rightSide.persent};
+    background: ${theme.bg_element3};
   `,
   secondary: (theme: Theme) => css`
-    background: ${theme.color.leftSide.persent};
+    background: ${theme.bg_element4};
   `,
 };

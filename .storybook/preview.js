@@ -2,7 +2,7 @@ import { addDecorator } from "@storybook/react";
 import { withKnobs } from "@storybook/addon-knobs";
 import { Global, ThemeProvider } from "@emotion/react";
 
-import { defaultTheme, globalStyle } from "../src/style";
+import { themeSets, globalStyle } from "../src/style";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -15,7 +15,7 @@ export const parameters = {
 };
 
 addDecorator((Story) => (
-  <ThemeProvider theme={defaultTheme}>
+  <ThemeProvider theme={themeSets["light"]}>
     <Global styles={globalStyle} />
     <Story />
   </ThemeProvider>
