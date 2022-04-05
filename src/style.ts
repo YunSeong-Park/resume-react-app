@@ -16,8 +16,9 @@ export const themeSets: Record<ThemeColor, Theme> = {
     bg_element4: "#f0f0f0",
     border1: "rgba(255, 255, 255, 0.2)",
     text1: WHITE_COLOR,
-    text2: "#333",
-    text3: "#848c90",
+    text2: "#003147",
+    text3: "#333",
+    text4: "#848c90",
   },
 };
 
