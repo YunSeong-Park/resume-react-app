@@ -9,6 +9,6 @@ export default {
   decorators: [],
 } as ComponentMeta<typeof ImageBox>;
 
-export const DefaultImageBox = () => {
+export const StandardImageBox = () => {
   return <ImageBox src="./img.jpg" />;
 };
