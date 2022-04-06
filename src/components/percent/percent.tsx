@@ -7,7 +7,7 @@ export interface PercentProps {
   percent: number;
   color?: "primary" | "secondary";
   size?: "small" | "medium";
-  width?: number | string;
+  width?: string;
 }
 
 const Percent: React.FC<PercentProps> = ({
