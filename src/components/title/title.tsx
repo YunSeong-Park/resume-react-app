@@ -51,7 +51,7 @@ interface TitleProps {
   subTitle?: string;
   size?: "large" | "medium";
   color?: "primary" | "secondary";
-  width?: number | string;
+  width?: string;
   isUppercase?: boolean;
   textAlign?: "left" | "center" | "right";
 }
@@ -77,7 +77,11 @@ const Title: React.FC<TitleProps> = ({
       ]}
     >
       {title}
-      {subTitle && <span>{subTitle}</span>}
+      {subTitle && (
+        <>
+          <br /> <span>{subTitle}</span>
+        </>
+      )}
     </h2>
   );
 };
