@@ -8,23 +8,23 @@ import { directory } from "./utill";
 export default {
   title: `${directory}/Title`,
   component: Title,
-  decorators: [],
+  decorators: [
+    (Story, context) => {
+      return (
+        <div
+          css={css`
+            font-size: 16px;
+            background-color: lightgrey;
+            padding: 5px;
+            width: 500px;
+          `}
+        >
+          <Story />
+        </div>
+      );
+    },
+  ],
 } as ComponentMeta<typeof Title>;
-
-addDecorator((Story, context) => {
-  return (
-    <div
-      css={css`
-        font-size: 16px;
-        background-color: lightgrey;
-        padding: 5px;
-        width: 500px;
-      `}
-    >
-      <Story />
-    </div>
-  );
-});
 
 export const Standard = () => {
   const title = text("title", "title");
