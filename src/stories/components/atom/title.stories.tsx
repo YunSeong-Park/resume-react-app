@@ -4,7 +4,6 @@ import { addDecorator, ComponentMeta, ComponentStory } from "@storybook/react";
 import { boolean, radios, text } from "@storybook/addon-knobs";
 import Title from "../../../components/title/title";
 import { directory } from "./utill";
-import { useState } from "react";
 
 export default {
   title: `${directory}/Title`,
