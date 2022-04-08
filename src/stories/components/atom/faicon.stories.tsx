@@ -1,5 +1,5 @@
 import { ComponentMeta } from "@storybook/react";
-import FAIcon from "../../../components/icon/faIcon";
+import FAIcon from "../../../components/atoms/icon/faIcon";
 import { radios } from "@storybook/addon-knobs";
 import { directory } from "./utill";
 

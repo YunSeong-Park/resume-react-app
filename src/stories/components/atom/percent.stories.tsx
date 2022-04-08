@@ -2,7 +2,9 @@
 import { css, jsx } from "@emotion/react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { number, radios, text } from "@storybook/addon-knobs";
-import Percent, { PercentProps } from "../../../components/percent/percent";
+import Percent, {
+  PercentProps,
+} from "../../../components/atoms/percent/percent";
 import { directory } from "./utill";
 
 export default {

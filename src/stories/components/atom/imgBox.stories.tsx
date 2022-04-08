@@ -1,5 +1,5 @@
 import { ComponentMeta } from "@storybook/react";
-import ImageBox from "../../../components/imgBox/imgBox";
+import ImageBox from "../../../components/atoms/imgBox/imgBox";
 
 import { directory } from "./utill";
 
