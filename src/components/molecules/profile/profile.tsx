@@ -16,12 +16,15 @@ const style = (theme: Theme) => css`
 `;
 
 interface ProfileProps {
-  imgSrc: string;
-  name: string;
-  job: string;
+  profile: {
+    imgSrc: string;
+    name: string;
+    job: string;
+  };
 }
 
-const Profile: React.FC<ProfileProps> = ({ imgSrc, name, job }) => {
+const Profile: React.FC<ProfileProps> = ({ profile }) => {
+  const { imgSrc, name, job } = profile;
   return (
     <section css={style}>
       <ImageBox src={imgSrc} />
