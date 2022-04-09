@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx, Theme, useTheme } from "@emotion/react";
+import { css, jsx, Theme } from "@emotion/react";
 import { memo } from "react";
 import Title from "../../atoms/title/title";
 
