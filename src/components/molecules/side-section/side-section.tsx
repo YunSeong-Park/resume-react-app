@@ -1,20 +1,21 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx, useTheme } from "@emotion/react";
+import { css, jsx, Theme, useTheme } from "@emotion/react";
 import { memo } from "react";
 import Title from "../../atoms/title/title";
 
-interface ContactInfoProps {
+interface SideSectionProps {
   title: string;
   children: React.ReactNode;
 }
 
-const ContactInfo: React.FC<ContactInfoProps> = ({ title, children }) => {
+const SideSection: React.FC<SideSectionProps> = ({ title, children }) => {
   return (
     <section>
       <Title title={title} size="medium" />
       <div
-        css={css`
+        css={(theme: Theme) => css`
           margin-top: 20px;
+          color: ${theme.text1};
         `}
       >
         {children}
@@ -23,4 +24,4 @@ const ContactInfo: React.FC<ContactInfoProps> = ({ title, children }) => {
   );
 };
 
-export default memo(ContactInfo);
+export default memo(SideSection);
