@@ -24,8 +24,10 @@ const icons = {
   cutlery: faCutlery,
 };
 
+export type Icon = keyof typeof icons;
+
 interface IconProps {
-  icon: keyof typeof icons;
+  icon: Icon;
 }
 
 const FAIcon: React.FC<IconProps> = ({ icon }) => {
