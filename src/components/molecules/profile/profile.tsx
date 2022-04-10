@@ -28,7 +28,7 @@ const Profile: React.FC<ProfileProps> = ({ profile }) => {
   return (
     <section css={style}>
       <ImageBox src={imgSrc} />
-      <Title title={name} subTitle={job} textAlign="center" />
+      <Title title={name} subTitle={job} textAlign="center" isUppercase />
     </section>
   );
 };

@@ -11,7 +11,7 @@ interface SideSectionProps {
 const SideSection: React.FC<SideSectionProps> = ({ title, children }) => {
   return (
     <section>
-      <Title title={title} size="medium" />
+      <Title title={title} size="medium" isUppercase />
       <div
         css={(theme: Theme) => css`
           margin-top: 20px;
@@ -25,3 +25,9 @@ const SideSection: React.FC<SideSectionProps> = ({ title, children }) => {
 };
 
 export default memo(SideSection);
+
+export const ulStyle = css`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;

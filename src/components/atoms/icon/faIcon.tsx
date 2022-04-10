@@ -28,13 +28,21 @@ export type Icon = keyof typeof icons;
 
 interface IconProps {
   icon: Icon;
+  width?: string;
 }
 
-const FAIcon: React.FC<IconProps> = ({ icon }) => {
+const FAIcon: React.FC<IconProps> = ({ icon, width = "30px" }) => {
   const theme = useTheme();
 
   return (
-    <span>
+    <span
+      css={css`
+        display: inline-block;
+        font-size: 18px;
+        width: ${width};
+        text-align: left;
+      `}
+    >
       <FontAwesomeIcon icon={icons[icon]} color={theme.primary} />
     </span>
   );

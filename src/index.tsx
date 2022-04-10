@@ -5,6 +5,7 @@ import App from "./App";
 import { Global, jsx } from "@emotion/react";
 import { globalStyle } from "./style";
 import { model } from "./model";
+import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>

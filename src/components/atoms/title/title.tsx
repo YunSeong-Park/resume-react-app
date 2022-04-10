@@ -15,6 +15,7 @@ const style = css`
 const sizes = {
   large: css`
     font-size: 1.5em;
+    line-height: 1.4em;
   `,
   medium: css`
     font-size: 1.17em;

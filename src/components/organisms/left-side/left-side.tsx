@@ -8,6 +8,9 @@ import EducationInfo from "../../molecules/side-section/education-info";
 import LanguageInfo from "../../molecules/side-section/language-info";
 
 const style = (theme: Theme) => css`
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   position: relative;
   background: ${theme.bg_element1};
   padding: 40px;
