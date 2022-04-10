@@ -10,7 +10,7 @@ export const themeSets: Record<ThemeColor, Theme> = {
   light: {
     primary: PRIMARY_COLOR,
     bg_page1: "lightblue",
-    bg_element1: "#003137",
+    bg_element1: "#003147",
     bg_element2: WHITE_COLOR,
     bg_element3: "#081921",
     bg_element4: "#f0f0f0",
