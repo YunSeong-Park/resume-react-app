@@ -1,6 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx, Theme, ThemeProvider } from "@emotion/react";
-import { useState } from "react";
+import React, { useState } from "react";
+import LeftSide from "./components/organisms/left-side/left-side";
+import { Model } from "./model";
 import { ThemeColor, themeSets } from "./style";
 
 const style = (theme: Theme) => css`
@@ -11,12 +13,18 @@ const style = (theme: Theme) => css`
   background: ${theme.bg_page1};
 `;
 
-const App = () => {
+interface AppProps {
+  data: Model;
+}
+
+const App: React.FC<AppProps> = ({ data }) => {
   const [theme, setTheme] = useState<ThemeColor>("light");
 
   return (
     <ThemeProvider theme={themeSets[theme]}>
-      <div css={style}></div>
+      <div css={style}>
+        <LeftSide data={data.leftSide} />
+      </div>
     </ThemeProvider>
   );
 };

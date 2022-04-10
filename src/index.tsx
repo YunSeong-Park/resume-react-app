@@ -4,11 +4,12 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { Global, jsx } from "@emotion/react";
 import { globalStyle } from "./style";
+import { model } from "./model";
 
 ReactDOM.render(
   <React.StrictMode>
     <Global styles={globalStyle} />
-    <App />
+    <App data={model} />
   </React.StrictMode>,
   document.getElementById("root")
 );
