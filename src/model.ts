@@ -57,11 +57,15 @@ export interface Model {
 
 export const model: Model = {
   leftSide: {
-    profile: { imgSrc: "./img.jpg", name: "박윤성", job: "front-end engineer" },
+    profile: {
+      imgSrc: "./img.jpg",
+      name: "박윤성",
+      job: "front-end developer",
+    },
     contactInfo: [
       { icon: "phone", descript: "+1 234 5678" },
       { icon: "mail", descript: "john_doe@email.com" },
-      { icon: "globe", descript: " www.mywebsite.com" },
+      { icon: "globe", descript: "www.mywebsite.com" },
       { icon: "map", descript: "Suwon" },
     ],
     educationInfo: [
