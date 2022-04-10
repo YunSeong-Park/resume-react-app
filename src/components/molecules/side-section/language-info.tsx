@@ -5,7 +5,7 @@ import Percent from "../../atoms/percent/percent";
 import SideSection from "./side-section";
 
 type Info = {
-  title: string;
+  language: string;
   percent: number;
 };
 
@@ -30,7 +30,7 @@ export default memo(LanguageInfo);
 const LanguageInfoItem: React.FC<{ info: Info }> = ({ info }) => {
   return (
     <li>
-      <p>{info.title}</p>
+      <p>{info.language}</p>
       <Percent percent={info.percent} />
     </li>
   );
