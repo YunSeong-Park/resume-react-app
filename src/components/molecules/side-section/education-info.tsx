@@ -14,12 +14,13 @@ interface EducationInfoProps {
 }
 
 const EducationInfo: React.FC<EducationInfoProps> = ({ infos }) => {
+  console.log(infos);
   return (
     <SideSection title="education">
       <ul>
-        {infos.map((info) => {
-          <EducationInfoItem info={info} />;
-        })}
+        {infos.map((info) => (
+          <EducationInfoItem info={info} />
+        ))}
       </ul>
     </SideSection>
   );
