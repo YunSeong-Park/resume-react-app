@@ -2,6 +2,7 @@
 import { css, jsx, Theme, ThemeProvider } from "@emotion/react";
 import React, { useState } from "react";
 import LeftSide from "./components/organisms/left-side/left-side";
+import RightSide from "./components/organisms/right-side/right-side";
 import { Model } from "./model";
 import { ThemeColor, themeSets } from "./style";
 
@@ -41,6 +42,7 @@ const App: React.FC<AppProps> = ({ data }) => {
       <div css={style}>
         <div css={container}>
           <LeftSide data={data.leftSide} />
+          <RightSide data={data.rightSide} />
         </div>
       </div>
     </ThemeProvider>

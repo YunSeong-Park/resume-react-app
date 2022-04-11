@@ -11,7 +11,7 @@ interface ExperienceProps {
 const Experience: React.FC<ExperienceProps> = ({ infos }) => {
   return (
     <RightSection title="experience">
-      <div
+      <ul
         css={css`
           display: flex;
           flex-direction: column;
@@ -21,7 +21,7 @@ const Experience: React.FC<ExperienceProps> = ({ infos }) => {
         {infos.map((info) => (
           <ExperienceItem info={info} />
         ))}
-      </div>
+      </ul>
     </RightSection>
   );
 };
@@ -30,7 +30,7 @@ export default memo(Experience);
 
 const ExperienceItem: React.FC<{ info: ExperienceInfo }> = ({ info }) => {
   return (
-    <div
+    <li
       css={css`
         display: flex;
       `}
@@ -61,6 +61,6 @@ const ExperienceItem: React.FC<{ info: ExperienceInfo }> = ({ info }) => {
         <h4>{info.duty}</h4>
         <p>{info.mainText}</p>
       </div>
-    </div>
+    </li>
   );
 };
