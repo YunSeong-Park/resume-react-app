@@ -23,7 +23,7 @@ type About = {
   mainText: string;
 };
 
-type ExperienceInfo = {
+export type ExperienceInfo = {
   term: string;
   company: string;
   duty: string;
@@ -96,7 +96,8 @@ export const model: Model = {
       mainText: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo
       repellendus doloribus vero assumenda quod, eligendi, modi numquam
       voluptas fugiat sunt officiis quas illum facilis eius adipisci eum
-      expedita. Quam?<br /><br />
+      expedita. Quam? 
+      
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quam
       sequi eveniet commodi placeat modi quos error odit, numquam sed?
       Aliquam expedita eum pariatur. Perferendis fugiat animi numquam sit
