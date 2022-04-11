@@ -3,8 +3,6 @@ import { css, jsx, Theme } from "@emotion/react";
 import { memo } from "react";
 
 const style = css`
-  font-weight: 600;
-
   > span {
     text-transform: inherit;
     font-size: 0.8em;
@@ -16,9 +14,11 @@ const sizes = {
   large: css`
     font-size: 1.5em;
     line-height: 1.4em;
+    font-weight: bold;
   `,
   medium: css`
     font-size: 1.17em;
+    font-weight: 600;
   `,
 };
 
