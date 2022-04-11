@@ -41,6 +41,9 @@ const SkillItem: React.FC<{ info: Info }> = ({ info }) => {
           text-transform: uppercase;
           color: ${theme.text4};
         }
+        @media (max-width: 600px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
       `}
     >
       <h4>{info.title}</h4>

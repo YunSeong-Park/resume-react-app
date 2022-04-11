@@ -33,6 +33,11 @@ const ExperienceItem: React.FC<{ info: ExperienceInfo }> = ({ info }) => {
     <li
       css={css`
         display: flex;
+
+        @media (max-width: 600px) {
+          flex-direction: column;
+          gap: 5px;
+        }
       `}
     >
       <div
@@ -42,6 +47,10 @@ const ExperienceItem: React.FC<{ info: ExperienceInfo }> = ({ info }) => {
             text-transform: uppercase;
             color: ${theme.text4};
             font-weight: 600;
+          }
+
+          @media (max-width: 600px) {
+            min-width: 150px;
           }
         `}
       >

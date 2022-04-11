@@ -21,6 +21,9 @@ const Interest: React.FC<InterestProps> = ({ infos }) => {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           grid-row-gap: 10px;
+          @media (max-width: 600px) {
+            grid-template-columns: repeat(1, 1fr);
+          }
         `}
       >
         {infos.map((info) => (
